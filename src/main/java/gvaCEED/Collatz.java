@@ -1,21 +1,28 @@
 package gvaCEED;
 import java.util.Scanner;
 
-public class Collatz {
+public class ExercisiConjecturaDeCollatz{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-   
 
-        // ✅ 1. Demanar un numero positiu
-       
-        // ✅ 2. Guardar el numero inicial
+        Scanner teclat = new Scanner (System.in);
+        int cont=0;
+        
+        System.out.println("Introdueix un nombre positiu: ");
+        int num = teclat.nextInt();
+        System.out.println("Seqüència de Collatz per al nombre: "+num);
 
-        // ✅ 3.Mostra
+        while(num != 1){
+            if(num % 2 == 0){
+                num = num / 2;
+                System.out.print(num + " --> ");
+            }else{
+                num = (num * 3) +1;
+                System.out.print(num + " --> ");
+            } 
+            cont++;
+        }
 
-        // ✅ 4. Mostrar la seqüència amb while
-
-        // ✅ 5. Mostrar el numero total de passos
+        System.out.println("Nombre total de passos: "+cont);   
     }
-
-} 
+}
 
