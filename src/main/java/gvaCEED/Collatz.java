@@ -1,7 +1,7 @@
 package gvaCEED;
 import java.util.Scanner;
 
-public class ExercisiConjecturaDeCollatz{
+public class Collatz{
     public static void main(String[] args) {
 
         Scanner teclat = new Scanner (System.in);
