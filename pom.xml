@@ -34,6 +34,7 @@
                     <printSummary>true</printSummary>
                     <reportFormat>brief</reportFormat>
                     <disableXmlReport>false</disableXmlReport>
+                    <reportFormat>plain</reportFormat>
             </configuration>
             </plugin>
         </plugins>
